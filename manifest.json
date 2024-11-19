@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Dark Theme for Margonem",
+    "version": "1.0.2",
+    "permissions": ["activeTab", "storage"],
+    "description": "Rozszerzenie wprowadza ciemny motyw na stronie Forum Margonem, poprawiając komfort użytkowania po zmroku.",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://forum.margonem.pl/*"], 
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icons/icon16.png"
+    },
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+}

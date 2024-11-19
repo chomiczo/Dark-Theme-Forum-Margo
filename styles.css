@@ -1,0 +1,41 @@
+/* styles.css */
+
+/* Ciemne tło i jasny tekst */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Tło nagłówków */
+  body.dark-theme h1, body.dark-theme h2, body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
+    color: #f5f5f5;
+  }
+  
+  /* Tło linków */
+  body.dark-theme a {
+    color: #bb86fc;
+  }
+  
+  body.dark-theme a:hover {
+    color: #3700b3;
+  }
+  
+  /* Tło i tekst formularzy */
+  body.dark-theme input, body.dark-theme select, body.dark-theme textarea {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+  
+  /* Tło dla innych elementów */
+  body.dark-theme .forum-post {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+  }
+  
+  /* Inne style dopasowane do forum */
+  body.dark-theme .forum-header {
+    background-color: #181818;
+    color: #f0f0f0;
+  }
+  

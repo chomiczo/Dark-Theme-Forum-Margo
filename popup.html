@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Theme for Margonem</title>
+  <style>
+    body {
+      width: 250px;
+      height: auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #121212; /* Ciemne tło */
+      color: #E0E0E0; /* Jasny tekst */
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      background-color: #4A90E2; /* Jasnoniebieski kolor */
+      color: white; /* Biały tekst */
+      border: none;
+      border-radius: 5px; /* Zaokrąglone rogi */
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease; /* Animacje */
+    }
+
+    button:hover {
+      background-color: #357ABD; /* Ciemniejszy niebieski przy hover */
+      transform: scale(1.05); /* Powiększenie przy hover */
+    }
+
+    button:active {
+      background-color: #2C6F98; /* Jeszcze ciemniejszy niebieski przy kliknięciu */
+      transform: scale(1); /* Normalny rozmiar po kliknięciu */
+    }
+
+    button:focus {
+      outline: none; /* Usunięcie obramowania przy focu */
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    .author-link {
+      color: #4A90E2; /* Jasnoniebieski kolor dla linku */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .author-link:hover {
+      text-decoration: underline; /* Podkreślenie przy hover */
+    }
+  </style>
+</head>
+<body>
+  <h3>Ciemny motyw</h3>
+  <button id="enableDarkMode">Włącz ciemny motyw</button>
+  <button id="disableDarkMode">Wyłącz ciemny motyw</button>
+  
+  <!-- Załaduj plik JavaScript -->
+  <script src="popup.js"></script>
+</body>
+</html>
